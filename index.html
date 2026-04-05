@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Honey's Cafe</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="loader">Loading...</div>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <div class="logo">Honey’s Cafe</div>
+
+  <div class="nav-links">
+    <a href="#">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <div class="nav-cta" onclick="callNow()">Call Now</div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <video autoplay muted loop src="hero.mp4"></video>
+  <div class="hero-content">
+    <h1>Honey's Cafe</h1>
+    <p>Delicious Home Style Food</p>
+    <button onclick="bookTable()">Reserve Table</button>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="cinematic-about reveal">
+  <div class="about-overlay"></div>
+  <div class="about-content">
+    <h2>About Honey's Cafe</h2>
+    <p>Authentic home-style cooking, made fresh with love. A place where every meal feels like family.</p>
+  </div>
+</section>
+
+<!-- MENU -->
+<section id="menu" class="reveal">
+  <h2>Menu</h2>
+
+  <div class="tabs">
+    <div class="tab active" onclick="showTab(0)">Starters</div>
+    <div class="tab" onclick="showTab(1)">Main</div>
+    <div class="tab" onclick="showTab(2)">Drinks</div>
+  </div>
+
+  <!-- STARTERS -->
+<div class="menu-items active">
+  <div class="menu-card">
+  <h3>Brussels Sprouts</h3>
+  <p>Crispy roasted with seasoning</p>
+  <span>$8.99</span>
+</div>
+  <div class="menu-card">Fried Pickles</div>
+  <div class="menu-card">Mozzarella Sticks</div>
+  <div class="menu-card">Onion Rings</div>
+</div>
+
+<!-- MAIN -->
+<div class="menu-items">
+  <div class="menu-card">Three Piece Catfish Fillet</div>
+  <div class="menu-card">Grilled Steak Plate</div>
+  <div class="menu-card">Chicken Fried Chicken</div>
+  <div class="menu-card">Hamburger Steak</div>
+  <div class="menu-card">Fried Chicken Plate</div>
+</div>
+
+<!-- DRINKS -->
+<div class="menu-items">
+  <div class="menu-card">Fresh Brewed Coffee</div>
+  <div class="menu-card">Sweet Iced Tea</div>
+  <div class="menu-card">Soft Drinks</div>
+  <div class="menu-card">Lemonade</div>
+</div>
+
+<!-- GALLERY -->
+<section id="gallery" class="reveal">
+  <h2>Gallery</h2>
+
+  <div class="gallery-wrapper">
+    <div class="gallery-track">
+      <img src="g1.jpg"><img src="g2.jpg"><img src="g3.jpg"><img src="g4.jpg">
+      <img src="g1.jpg"><img src="g2.jpg"><img src="g3.jpg"><img src="g4.jpg">
+    </div>
+
+    <div class="gallery-track reverse">
+      <img src="g4.jpg"><img src="g3.jpg"><img src="g2.jpg"><img src="g1.jpg">
+      <img src="g4.jpg"><img src="g3.jpg"><img src="g2.jpg"><img src="g1.jpg">
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews-section reveal">
+  <h2>Customer Reviews</h2>
+
+  <div class="review">
+    <p>"Great home cooked food and great service!"</p>
+    <h4>— John Harris</h4>
+  </div>
+
+  <div class="review">
+    <p>"The catfish is really good!! Staff made us feel like family."</p>
+    <h4>— Karla Snider</h4>
+  </div>
+
+  <div class="review">
+    <p>"Food was good, environment welcoming and staff very friendly."</p>
+    <h4>— Local Customer</h4>
+  </div>
+
+</section>
+<!-- MAP -->
+<section class="map-section reveal">
+  <h2>Find Us</h2>
+
+  <div class="map-container">
+    <iframe 
+      src="https://www.google.com/maps?q=30+Park+S+Blvd,+Lineville,+AL&output=embed"
+      width="100%" 
+      height="400" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+  </div>
+</section>
+<section id="contact" class="contact-section reveal">
+  <h2>Contact Us</h2>
+
+  <div class="contact-grid">
+
+    <div class="contact-card">
+      <h3>📍 Location</h3>
+      <p>30 Park S Blvd<br>Lineville, AL</p>
+    </div>
+
+    <div class="contact-card">
+      <h3>📞 Call Us</h3>
+      <p>+1 256-396-9101</p>
+    </div>
+
+    <div class="contact-card">
+      <h3>🌐 Social</h3>
+      <a href="https://www.facebook.com/share/17uYB38E7L/?mibextid=wwXIfr" target="_blank">Facebook Page</a>
+    </div>
+
+    <div class="contact-card">
+      <h3>⏰ Hours</h3>
+      <p>Sun–Fri: 10:30 AM – 9 PM<br>Saturday: Closed</p>
+    </div>
+
+  </div>
+</section>
+<script src="script.js"></script>
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <h2>Honey’s Cafe</h2>
+      <p>Delicious home-style food made with love.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <a href="#">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p>📍 Lineville, AL</p>
+      <p>📞 +1 256-396-9101</p>
+    </div>
+
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <a href="https://www.facebook.com/share/17uYB38E7L/?mibextid=wwXIfr" target="_blank">Facebook</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Honey’s Cafe. All rights reserved.</p>
+  </div>
+
+</footer>
+</body>
+</html>
